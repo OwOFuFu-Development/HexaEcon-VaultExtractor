@@ -1,0 +1,7 @@
+name: VaultExtractor
+version: '1.0'
+main: space.kiyoshi.vaultextractor.VaultExtractor
+author: OwOFuFu
+api-version: 1.16
+depend:
+  - HexaEcon
