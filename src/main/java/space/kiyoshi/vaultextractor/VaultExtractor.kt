@@ -41,7 +41,7 @@ class VaultExtractor : JavaPlugin(), Listener {
     fun onJoin(event: PlayerJoinEvent) {
         val player = event.player
         val balance = getEconomy().getBalance(player)
-        if(getEconomy().getBalance(player) > 0) {
+        if(balance > 0) {
             if(!(isExtractedPlayerInList(player.name))) {
                 HexaEconAPI.deleteBankAccount(player)
                 HexaEconAPI.createBankAccount(player, balance.toLong())
